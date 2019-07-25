@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Summer Reading List</title>
+  <link href="https://fonts.googleapis.com/css?family=Butterfly+Kids&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v1">
+  <link rel="stylesheet" href="css/skeleton.css?v1">
+
+</head>
+
+<body>
+  <center><h1>Summer Reading List</h1></center>
+  <hr>
+
+  <div id="main">
+    <div class="btn">
+      <center>      <button id="newbook">Add Book to Library</button>
+      </center>
+    </div>
+
+    <table id="library">
+      <tr id = "shelf-headers">
+        <th>Title</th>
+        <th>Author</th>
+        <th>Pages</th>
+        <th>Status</th>
+      </tr>
+    </table>
+
+    <div class="newBook-modal">
+      <span class="close" title="Click to close">&times;</span>
+
+      <div class="modal-content">
+        <form id="form">
+
+          <div>
+            <label for="title">Title</label>
+            <input type="text" name="title" id="title" required placeholder="Title of book">
+          </div>
+
+          <div>
+              <label for="author">Author</label>
+              <input type="text" name="author" id="author" required placeholder="Book's author">
+          </div>
+
+          <div>
+              <label for="pages">Pages</label>
+              <input type="number" name="pages" id="pages" required placeholder="Number of pages">
+          </div>
+
+          <div>
+              <label for="status">Status:</label>
+              <select id="status" required>
+                  <option value="unread">Unread</option>
+                  <option value="read">Read</option>
+              </select>
+          </div>
+          
+          <button type="submit">Add new book</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/books.js?v1"></script>
+</body>
+</html>
